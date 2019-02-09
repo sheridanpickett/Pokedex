@@ -1,5 +1,6 @@
-import Layout from '../components/MyLayout.js';
 import fetch from 'isomorphic-unfetch';
+import Layout from '../components/MyLayout.js';
+import Search from '../components/Search';
 
 export default class extends React.Component {
 
@@ -12,27 +13,22 @@ export default class extends React.Component {
     } else {
       fetch("https://pokeapi.co/api/v2/pokemon?limit=718")
         .then(response => response.json())
-        .then(response => this.setState({data: response}));
+        .then(response => this.setState({data: response}))
+        .then(() => localStorage.setItem('appState', JSON.stringify(this.state)));
     }
   }
 
-  componentWillUnmount() {
-    localStorage.setItem('appState', JSON.stringify(this.state));
-  }
-
   render() {
-    console.log(this.state)
     if(this.state) {
       return (
           <Layout>
-             <p>{this.state.data.count}</p>
-             <img url={this.state.data.results} />
+            <Search />
           </Layout>
       )
     } else {
       return (
           <Layout>
-             {<p>2</p>}
+             <p>loading...</p>
           </Layout>
       )
     }

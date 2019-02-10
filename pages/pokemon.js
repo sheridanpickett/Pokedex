@@ -1,7 +1,11 @@
-import Layout from '../components/MyLayout.js';
+import {withRouter} from 'next/router'
+import Layout from '../components/MyLayout.js'
 
-export default () => (
+const PokedexEntry = withRouter((props) => (
     <Layout>
-       <p>This is a pokedex entry</p>
+       <h1>{props.router.query.name}</h1>
+       <p>this is the pokedex entry for {props.router.query.name}</p>
     </Layout>
-)
+))
+
+export default PokedexEntry

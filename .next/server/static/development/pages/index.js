@@ -110,7 +110,7 @@ var _jsxFileName = "/Users/sheridan/Desktop/Pokedex/components/Footer.js";
 
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background-color: #E20210;\n  padding: 20px;\n  h2{\n    color: white;\n    font-family: 'Oswald', sans-serif;\n    width: 70%\n    margin: 0 auto;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color: #E20210;\n  padding: 20px;\n  margin-top: 40px;\n  h2{\n    color: white;\n    font-family: 'Oswald', sans-serif;\n    width: 70%\n    margin: 0 auto;\n  }\n  a {\n    color: white;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -128,28 +128,42 @@ var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledFooter, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 21
     },
     __self: this
   }, "Pok\xE9mon \xA9 2002-2019 Pok\xE9mon. \xA9 1995-2019 Nintendo/Creatures Inc./GAME FREAK inc. TM, \xAE and Pok\xE9mon character names are trademarks of Nintendo."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 23
     },
     __self: this
-  }, "Data from PokeAPI"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }, "Data from ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://pokeapi.co",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 23
     },
     __self: this
-  }, "Icons made by Smashicons"));
+  }, "PokeAPI")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "Icons made by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://smashicons.com",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "Smashicons")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -394,7 +408,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  margin: 0 auto;\n  max-width: 1000px;\n  width: 100%;\n  padding: 0 10px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin: 0 auto;\n  max-width: 1200px;\n  width: 100%;\n  padding: 0 10px;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -414,7 +428,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  html {\n    box-sizing: border-box;\n    font-size: 10px;\n  }\n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  body, h1, h2 {\n    font-size: 1.6rem;\n    padding: 0;\n    margin: 0;\n  }\n  body {\n    background-image: url('/static/images/icons/dot-small.png');\n  }\n  a {\n    text-decoration: none;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  html {\n    box-sizing: border-box;\n    font-size: 10px;\n  }\n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  body, h1, h2 {\n    font-size: 1.6rem;\n    padding: 0;\n    margin: 0;\n  }\n  body {\n    background-image: url('/static/images/icons/dot-small.png');\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -429,6 +443,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+var theme = {
+  mainColor: '#3CF'
+};
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
 var StyledPage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject2());
 var StyledInner = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject3());
@@ -438,64 +455,56 @@ var Layout =
 function (_React$Component) {
   _inherits(Layout, _React$Component);
 
-  function Layout(props) {
-    var _this;
-
+  function Layout() {
     _classCallCheck(this, Layout);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Layout).call(this, props));
-    _this.state = {
-      theme: {
-        mainColor: '#3CF'
-      }
-    };
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(Layout).apply(this, arguments));
   }
 
   _createClass(Layout, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
-        theme: this.state.theme,
+        theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 47
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 48
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 49
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 50
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 53
         },
         __self: this
       })));
@@ -506,6 +515,94 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 
+
+/***/ }),
+
+/***/ "./components/PokedexDisplay.js":
+/*!**************************************!*\
+  !*** ./components/PokedexDisplay.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/sheridan/Desktop/Pokedex/components/PokedexDisplay.js";
+
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  width: 70px;\n  height: 70px;\n  display: inline-block;\n  margin: 2px;\n  border: 2px solid grey;\n  background-color: white;\n  &:hover {\n    border: 2px solid #3CF;\n  }\n  img {\n    width: 100%;\n    margin: 0;\n    position: absolute;\n    bottom: 50%;\n    transform: translateY(50%);\n  }\n  div {\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n  }\n  div:hover {\n    animation: ", " .3s steps(2) infinite;\n  }\n}\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  0% {\n    transform: translateY(0);\n  }\n\n  100% {\n    transform: translateY(-20%);\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+var bounce = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
+var StyledPokedex = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div(_templateObject2(), bounce);
+
+var PokedexDisplay = function PokedexDisplay(props) {
+  var pokemon = props.pokemon.results.map(function (pokemon, index) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPokedex, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/pokemon?name=".concat(pokemon.name),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: "/static/images/sprites/".concat(index + 1, ".png"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50
+      },
+      __self: this
+    }))));
+  });
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, pokemon);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (PokedexDisplay);
 
 /***/ }),
 
@@ -544,7 +641,7 @@ var Search = function Search() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSearch, {
     type: "text",
     name: "Search",
-    placeholder: "Search Pokedex",
+    placeholder: "Search Pok\xE9dex",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -567,16 +664,24 @@ var Search = function Search() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _default; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "@babel/runtime/regenerator");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
+/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
+/* harmony import */ var _components_PokedexDisplay__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/PokedexDisplay */ "./components/PokedexDisplay.js");
+
 var _jsxFileName = "/Users/sheridan/Desktop/Pokedex/pages/index.js";
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -598,6 +703,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var _default =
 /*#__PURE__*/
 function (_React$Component) {
@@ -611,65 +717,124 @@ function (_React$Component) {
 
   _createClass(_default, [{
     key: "componentDidMount",
-    //fetch data from localStorage or from API
     value: function componentDidMount() {
-      var _this = this;
-
-      if (localStorage.getItem('appState') != "null" && localStorage.getItem('appState')) {
-        var state = JSON.parse(localStorage.getItem("appState"));
-        var data = state.data;
-        this.setState({
-          data: data
-        });
-      } else {
-        isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()("https://pokeapi.co/api/v2/pokemon?limit=718").then(function (response) {
-          return response.json();
-        }).then(function (response) {
-          return _this.setState({
-            data: response
-          });
-        }).then(function () {
-          return localStorage.setItem('appState', JSON.stringify(_this.state));
-        });
-      }
+      localStorage.setItem('data', JSON.stringify(this.props.pokemon));
     }
   }, {
     key: "render",
     value: function render() {
-      if (this.state) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 24
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 25
-          },
-          __self: this
-        }));
-      } else {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 30
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 31
-          },
-          __self: this
-        }, "loading..."));
-      }
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_PokedexDisplay__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        pokemon: this.props.pokemon,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }));
     }
+  }], [{
+    key: "getInitialProps",
+    value: function () {
+      var _getInitialProps = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var pokemon, lsTest, response, _response;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                pokemon = {};
+
+                lsTest = function lsTest() {
+                  var test = 'test';
+
+                  try {
+                    localStorage.setItem(test, test);
+                    localStorage.removeItem(test);
+                    return true;
+                  } catch (e) {
+                    return false;
+                  }
+                };
+
+                if (!(lsTest() === true)) {
+                  _context.next = 15;
+                  break;
+                }
+
+                if (!localStorage.getItem('data')) {
+                  _context.next = 7;
+                  break;
+                }
+
+                pokemon = JSON.parse(localStorage.getItem('data'));
+                _context.next = 13;
+                break;
+
+              case 7:
+                _context.next = 9;
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("https://pokeapi.co/api/v2/pokemon?limit=718");
+
+              case 9:
+                response = _context.sent;
+                _context.next = 12;
+                return response.json();
+
+              case 12:
+                pokemon = _context.sent;
+
+              case 13:
+                _context.next = 21;
+                break;
+
+              case 15:
+                _context.next = 17;
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("https://pokeapi.co/api/v2/pokemon?limit=718");
+
+              case 17:
+                _response = _context.sent;
+                _context.next = 20;
+                return _response.json();
+
+              case 20:
+                pokemon = _context.sent;
+
+              case 21:
+                return _context.abrupt("return", {
+                  pokemon: pokemon
+                });
+
+              case 22:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function getInitialProps() {
+        return _getInitialProps.apply(this, arguments);
+      }
+
+      return getInitialProps;
+    }()
   }]);
 
   return _default;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
 
 
 
@@ -684,6 +849,17 @@ function (_React$Component) {
 
 module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "@babel/runtime/regenerator":
+/*!*********************************************!*\
+  !*** external "@babel/runtime/regenerator" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/regenerator");
 
 /***/ }),
 
@@ -706,6 +882,17 @@ module.exports = require("isomorphic-unfetch");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "next/link":
+/*!****************************!*\
+  !*** external "next/link" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/link");
 
 /***/ }),
 

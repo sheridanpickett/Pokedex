@@ -3,6 +3,10 @@ import Meta from './Meta';
 import Header from './Header';
 import Footer from './Footer';
 
+const theme = {
+  mainColor: '#3CF'
+}
+
 const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
@@ -19,9 +23,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-image: url('/static/images/icons/dot-small.png');
   }
-  a {
-    text-decoration: none;
-  }
 `;
 
 const StyledPage = styled.div`
@@ -33,24 +34,15 @@ const StyledPage = styled.div`
 
 const StyledInner = styled.div`
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   padding: 0 10px;
 `;
 
 export default class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      theme: {
-        mainColor: '#3CF'
-      }
-    }
-  }
-
   render() {
     return (
-      <ThemeProvider theme={this.state.theme}>
+      <ThemeProvider theme={theme}>
         <StyledPage>
           <GlobalStyle />
           <Meta />

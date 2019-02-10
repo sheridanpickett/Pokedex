@@ -26,7 +26,7 @@ const StyledSearch = styled.input`
 
 const Search = () => {
   return (
-    <StyledSearch type="text" name="Search" placeholder="Search Pokedex" />
+    <StyledSearch type="text" name="Search" placeholder="Search Pokédex" />
   )
 }
 

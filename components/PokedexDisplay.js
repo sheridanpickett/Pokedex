@@ -55,7 +55,7 @@ const PokedexDisplay = props => {
         <StyledPokedexEntry key={index}>
           <div className="focus" tabIndex="0">
           <span><img src="../static/images/icons/pokeball.png" />{pokemon.id}</span>
-            <Link href={`/pokemon?name=${pokemon.name}`}>
+            <Link href={`/pokemon?id=${pokemon.id}`}>
               <div>
                 <img src={`/static/images/sprites/${pokemon.id}.png`} alt={pokemon.name} />
               </div>
@@ -71,7 +71,7 @@ const PokedexDisplay = props => {
         <StyledPokedexEntry key={index}>
           <div className="focus" tabIndex="0">
           <span><img src="../static/images/icons/pokeball.png" />{pokemon.id}</span>
-            <Link href={`/pokemon?name=${pokemon.name}`}>
+            <Link href={`/pokemon?id=${pokemon.id}`}>
               <div>
                 <img src={`/static/images/sprites/${pokemon.id}.png`} alt={pokemon.name} />
               </div>

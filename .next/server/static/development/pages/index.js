@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -608,7 +608,7 @@ var PokedexDisplay = function PokedexDisplay(props) {
         },
         __self: this
       }), pokemon.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "/pokemon?name=".concat(pokemon.name),
+        href: "/pokemon?id=".concat(pokemon.id),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 58
@@ -664,7 +664,7 @@ var PokedexDisplay = function PokedexDisplay(props) {
         },
         __self: this
       }), pokemon.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "/pokemon?name=".concat(pokemon.name),
+        href: "/pokemon?id=".concat(pokemon.id),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 74
@@ -961,7 +961,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

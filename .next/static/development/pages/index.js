@@ -511,7 +511,7 @@ var PokedexDisplay = function PokedexDisplay(props) {
         },
         __self: this
       }), pokemon.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "/pokemon?name=".concat(pokemon.name),
+        href: "/pokemon?id=".concat(pokemon.id),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 58
@@ -567,7 +567,7 @@ var PokedexDisplay = function PokedexDisplay(props) {
         },
         __self: this
       }), pokemon.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        href: "/pokemon?name=".concat(pokemon.name),
+        href: "/pokemon?id=".concat(pokemon.id),
         __source: {
           fileName: _jsxFileName,
           lineNumber: 74
@@ -15011,7 +15011,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -15036,5 +15036,5 @@ module.exports = dll_e35c82f7afc1955c4526;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

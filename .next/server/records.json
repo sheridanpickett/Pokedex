@@ -1,0 +1,69 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "external \"react\"": 0,
+      "external \"styled-components\"": 1,
+      "external \"next/router\"": 2,
+      "external \"nprogress\"": 3,
+      "external \"next/link\"": 4,
+      "external \"@babel/runtime/regenerator\"": 5,
+      "external \"next/head\"": 6,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!components/MyLayout.js 8f0d69f3ac2f5fc7baf98617de597ab8": 7,
+      "external \"next/document\"": 8,
+      "external \"isomorphic-unfetch\"": 9,
+      "multi ./pages/_document.js": 10,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/_document.js": 11,
+      "multi ./pages/index.js": 12,
+      "multi ./pages/pokemon.js": 13,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/pokemon.js": 14,
+      "multi node_modules/next/dist/pages/_app.js": 15,
+      "node_modules/next/dist/pages/_app.js": 16,
+      "external \"next/app\"": 17,
+      "multi node_modules/next/dist/pages/_error.js": 18,
+      "node_modules/next/dist/pages/_error.js": 19,
+      "external \"next/error\"": 20,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js b291e2af5a837c09660569c7033ac0ce": 21
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/_document.js": 0,
+      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/index.js": 1,
+      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/pokemon.js": 2,
+      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/_app.js": 3,
+      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/_error.js": 4
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

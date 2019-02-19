@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -577,7 +577,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  font-family: \"Silkscreen\", sans-serif;\n  background-color: white;\n  .divider {\n    display: flex;\n    flex-wrap: wrap-reverse;\n    justify-content: space-around;\n    text-align: left;\n    padding: 10px;\n    margin: 20px 0;\n    background-color: red;\n    color: white;\n  }\n  .flex {\n    display: flex;\n    justify-content: space-evenly;\n    margin-top: 15px;\n  }\n  .wrap {\n    flex-wrap: wrap;\n    border: 1px solid black;\n  }\n  .flex div {\n    margin: 0 10px;\n  }\n  .genus {\n    font-style: italic;\n    font-size: 2rem;\n    margin: 10px;\n  }\n  table {\n    display: inline-block;\n    th {\n      padding: 5px;\n      border-bottom: 3px dotted black;\n    }\n  }\n  nav{\n    display: flex;\n    justify-content: space-between;\n    padding: 5px;\n    margin: 20px 0 0 0;\n    background-color: red;\n    color: white;\n    a{\n      color: white;\n      text-decoration: none;\n    }\n  }\n  h1 {\n    padding: 30px;\n    background-color: white;\n    color: black;\n    font-size: 3rem;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-family: \"Silkscreen\", sans-serif;\n  background-color: white;\n  .divider {\n    display: flex;\n    flex-wrap: wrap-reverse;\n    justify-content: space-around;\n    text-align: left;\n    padding: 10px;\n    margin: 20px 0;\n    background-color: red;\n    color: white;\n  }\n  .divider > div {\n    margin: 10px 0;\n  }\n  .flex {\n    display: flex;\n    justify-content: space-evenly;\n  }\n  .wrap {\n    flex-wrap: wrap;\n    border: 1px solid black;\n  }\n  .flex div {\n    margin: 0 10px;\n  }\n  .genus {\n    font-style: italic;\n    font-size: 2rem;\n    margin: 10px;\n  }\n  table {\n    display: inline-block;\n    th {\n      padding: 5px;\n      border-bottom: 3px dotted black;\n    }\n  }\n  nav{\n    display: flex;\n    justify-content: space-between;\n    padding: 5px;\n    margin: 20px 0 0 0;\n    background-color: red;\n    color: white;\n    a{\n      color: white;\n      text-decoration: none;\n    }\n  }\n  h1 {\n    padding: 30px;\n    background-color: white;\n    color: black;\n    font-size: 3rem;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -631,19 +631,19 @@ function (_React$Component) {
             return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 93
+                lineNumber: 95
               },
               __self: this
             }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 93
+                lineNumber: 95
               },
               __self: this
             }, move.move.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 93
+                lineNumber: 95
               },
               __self: this
             }, move.version_group_details[0].level_learned_at));
@@ -657,13 +657,13 @@ function (_React$Component) {
             return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 100
+                lineNumber: 102
               },
               __self: this
             }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 100
+                lineNumber: 102
               },
               __self: this
             }, move.move.name));
@@ -689,7 +689,7 @@ function (_React$Component) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 112
+            lineNumber: 114
           },
           __self: this
         }, "404 Page not found");
@@ -697,19 +697,19 @@ function (_React$Component) {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 118
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledContent, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 117
+            lineNumber: 119
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 118
+            lineNumber: 120
           },
           __self: this
         }, species.id > 1 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -717,26 +717,26 @@ function (_React$Component) {
           href: "/pokemon?id=".concat(pokemon.id - 1),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 119
+            lineNumber: 121
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 119
+            lineNumber: 121
           },
           __self: this
         }, "Prev")) : null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
           href: "/",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 120
+            lineNumber: 122
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 120
+            lineNumber: 122
           },
           __self: this
         }, "Home")), species.id < 718 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -744,328 +744,364 @@ function (_React$Component) {
           href: "/pokemon?id=".concat(pokemon.id + 1),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 121
+            lineNumber: 123
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 121
+            lineNumber: 123
           },
           __self: this
         }, "Next")) : null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 123
+            lineNumber: 125
           },
           __self: this
         }, species.name, " - ", species.names[1].name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
           src: pokemon.sprites.front_default,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 124
+            lineNumber: 126
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           className: "genus",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 125
+            lineNumber: 127
           },
           __self: this
         }, species.genera[1].language == "en" ? species.genera[1].genus.slice(0, -7) + "pokemon" : species.genera[2].genus.slice(0, -7) + "pokemon"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 130
+            lineNumber: 132
           },
           __self: this
         }, species.flavor_text_entries[1].language.name == "en" ? species.flavor_text_entries[1].flavor_text : species.flavor_text_entries[2].flavor_text), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           className: "divider",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 135
+            lineNumber: 137
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           className: "flex",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 136
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 137
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
             lineNumber: 138
           },
           __self: this
-        }, pokemon.stats[0].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 139
           },
           __self: this
-        }, pokemon.stats[1].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 140
           },
           __self: this
-        }, pokemon.stats[2].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[0].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 141
           },
           __self: this
-        }, pokemon.stats[3].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[1].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 142
           },
           __self: this
-        }, pokemon.stats[4].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[2].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 143
           },
           __self: this
-        }, pokemon.stats[5].stat.name)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[3].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 144
+          },
+          __self: this
+        }, pokemon.stats[4].stat.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 145
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 146
-          },
-          __self: this
-        }, pokemon.stats[0].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[5].stat.name)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 147
           },
           __self: this
-        }, pokemon.stats[1].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 148
           },
           __self: this
-        }, pokemon.stats[2].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[0].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 149
           },
           __self: this
-        }, pokemon.stats[3].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[1].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 150
           },
           __self: this
-        }, pokemon.stats[4].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[2].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 151
           },
           __self: this
-        }, pokemon.stats[5].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[3].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 152
+          },
+          __self: this
+        }, pokemon.stats[4].base_stat), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 153
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 154
-          },
-          __self: this
-        }, this.statDisplay(pokemon.stats[0].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.stats[5].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 155
           },
           __self: this
-        }, this.statDisplay(pokemon.stats[1].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 156
           },
           __self: this
-        }, this.statDisplay(pokemon.stats[2].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, this.statDisplay(pokemon.stats[0].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 157
           },
           __self: this
-        }, this.statDisplay(pokemon.stats[3].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, this.statDisplay(pokemon.stats[1].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 158
           },
           __self: this
-        }, this.statDisplay(pokemon.stats[4].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, this.statDisplay(pokemon.stats[2].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 159
           },
           __self: this
+        }, this.statDisplay(pokemon.stats[3].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 160
+          },
+          __self: this
+        }, this.statDisplay(pokemon.stats[4].base_stat)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 161
+          },
+          __self: this
         }, this.statDisplay(pokemon.stats[5].base_stat)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 162
-          },
-          __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 163
-          },
-          __self: this
-        }, "ID : ", pokemon.id), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 164
           },
           __self: this
-        }, "Height : ", pokemon.height / 10, "M"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 165
           },
           __self: this
-        }, "Weight : ", pokemon.weight / 10, "KG"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, "ID : ", pokemon.id), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 166
           },
           __self: this
-        }, pokemon.abilities.length == 1 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, "Height : ", pokemon.height / 10, "M"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 167
+          },
+          __self: this
+        }, "Weight : ", pokemon.weight / 10, "KG"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 168
           },
           __self: this
-        }, "Ability : ", pokemon.abilities[0].ability.name) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, pokemon.abilities.length == 1 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 169
+            lineNumber: 170
           },
           __self: this
-        }, "Abilities : ", pokemon.abilities[0].ability.name, ", ", pokemon.abilities[1].ability.name)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, "Ability : ", pokemon.abilities[0].ability.name) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 171
           },
           __self: this
-        }, pokemon.types.length == 1 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledType, {
+        }, "Abilities : ", pokemon.abilities[0].ability.name, ", ", pokemon.abilities[1].ability.name)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 173
           },
           __self: this
-        }, "Type: ", pokemon.types[0].type.name) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledType, {
+        }, pokemon.types.length == 1 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledType, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 174
+            lineNumber: 175
           },
           __self: this
-        }, "Types : ", pokemon.types[0].type.name, ", ", pokemon.types[1].type.name)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        }, "Type: ", pokemon.types[0].type.name) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyledType, {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 176
           },
           __self: this
-        }, species.egg_groups.length == 1 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        }, "Types : ", pokemon.types[0].type.name, ", ", pokemon.types[1].type.name)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 178
           },
           __self: this
+        }, species.egg_groups.length == 1 ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 180
+          },
+          __self: this
         }, "Egg Group : ", species.egg_groups[0].name) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 179
+            lineNumber: 181
           },
           __self: this
         }, "Egg Groups : ", species.egg_groups[0].name, ", ", species.egg_groups[1].name)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 183
+            lineNumber: 185
           },
           __self: this
         }, "Moves"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           className: "flex wrap",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 184
+            lineNumber: 186
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 185
+            lineNumber: 187
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 186
+            lineNumber: 188
           },
           __self: this
-        }, "Tutor Moves"), this.moveDisplay("tutor")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 189
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
-          colSpan: "2",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 190
+            lineNumber: 189
           },
           __self: this
-        }, "Level-up Moves"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", {
+        }, "Tutor Moves")), this.moveDisplay("tutor"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 191
+            lineNumber: 193
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 191
-          },
-          __self: this
-        }, "Move"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 191
-          },
-          __self: this
-        }, "Level")), this.moveDisplay("Level")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 194
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 195
           },
           __self: this
-        }, "Egg Moves"), this.moveDisplay("egg")))));
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+          colSpan: "2",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 195
+          },
+          __self: this
+        }, "Level-up Moves")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 196
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 196
+          },
+          __self: this
+        }, "Move"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 196
+          },
+          __self: this
+        }, "Level")), this.moveDisplay("Level"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 200
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 201
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 202
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 202
+          },
+          __self: this
+        }, "Egg Moves")), this.moveDisplay("egg"))))));
       }
     }
   }], [{
@@ -1133,7 +1169,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/pokemon.js ***!
   \********************************/

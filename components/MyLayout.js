@@ -8,6 +8,10 @@ const theme = {
 }
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: "Silkscreen";
+    src: url("/static/fonts/slkscr.ttf");
+  }
   html {
     box-sizing: border-box;
     font-size: 10px;
@@ -21,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
   body {
-    background-image: url('/static/images/icons/dot-small.png');
+    background-image: url("/static/images/icons/dot-small.png");
   }
 `;
 
@@ -37,6 +41,7 @@ const StyledInner = styled.div`
   max-width: 1200px;
   width: 100%;
   padding: 0 10px;
+  text-align: center;
 `;
 
 export default class Layout extends React.Component {

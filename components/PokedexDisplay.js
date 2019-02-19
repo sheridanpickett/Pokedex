@@ -2,61 +2,89 @@ import Link from 'next/link';
 import styled, { keyframes } from 'styled-components';
 
 const bounce = keyframes`
-  0% {
-    transform: translateY(0);
+  100% {
+    transform: translateY(10%);
   }
 
-  100% {
-    transform: translateY(-20%);
+  0% {
+    transform: translateY(-10%);
   }
 `;
 
+const StyledPokedexContainer = styled.div`
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 70px);
+  grid-gap: 2px;
+`;
 
-const StyledPokedex = styled.div`
+const StyledPokedexEntry = styled.div`
+  display: inline-block;
   position: relative;
+  text-align: center;
+  font-family: "Silkscreen", sans-serif;
   width: 70px;
   height: 70px;
-  display: inline-block;
-  margin: 2px;
   border: 2px solid grey;
   background-color: white;
-  &:hover {
-    border: 2px solid #3CF;
-  }
-  img {
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-  }
   div {
     display: inline-block;
     width: 100%;
     height: 100%;
+    outline-style: hidden;
   }
-  div:hover {
+  .focus:focus div, .focus:hover div {
     animation: ${bounce} .3s steps(2) infinite;
   }
-}
-`
+  .focus:focus, .focus:hover {
+    outline: 5px solid #5E9ED6;
+  }
+  img {
+    width: 100%;
+  }
+  span img {
+    width: 15%;
+  }
+`;
 
 const PokedexDisplay = props => {
-  let pokemon = props.pokemon.results.map((pokemon, index) => {
-    return (
-      <StyledPokedex>
-        <Link href={`/pokemon?name=${pokemon.name}`}>
-          <div>
-            <img src={`/static/images/sprites/${index+1}.png`} />
+  let pokemon = [];
+  if(props.searchCriteria == "") {
+    pokemon = props.pokemon.map((pokemon, index) => {
+      return (
+        <StyledPokedexEntry key={index}>
+          <div className="focus" tabIndex="0">
+          <span><img src="../static/images/icons/pokeball.png" />{pokemon.id}</span>
+            <Link href={`/pokemon?name=${pokemon.name}`}>
+              <div>
+                <img src={`/static/images/sprites/${pokemon.id}.png`} alt={pokemon.name} />
+              </div>
+            </Link>
           </div>
-        </Link>
-      </StyledPokedex>
-    )
-  });
+        </StyledPokedexEntry>
+      )
+    })
+  } else {
+    pokemon = props.pokemon.filter(pokemon => pokemon.name.includes(props.searchCriteria));
+    pokemon = pokemon.map((pokemon, index) => {
+      return (
+        <StyledPokedexEntry key={index}>
+          <div className="focus" tabIndex="0">
+          <span><img src="../static/images/icons/pokeball.png" />{pokemon.id}</span>
+            <Link href={`/pokemon?name=${pokemon.name}`}>
+              <div>
+                <img src={`/static/images/sprites/${pokemon.id}.png`} alt={pokemon.name} />
+              </div>
+            </Link>
+          </div>
+        </StyledPokedexEntry>
+      )
+    })
+  };
   return(
-    <div>
+    <StyledPokedexContainer>
       {pokemon}
-    </div>
+    </StyledPokedexContainer>
   )
 }
 

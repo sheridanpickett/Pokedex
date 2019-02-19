@@ -3,12 +3,13 @@ import styled from 'styled-components';
 const StyledSearch = styled.input`
   display: block;
   color: #3CF;
-  width: 200px;
+  width: 220px;
   box-sizing: border-box;
   margin: 20px auto;
   border: 2px solid #3CF;
   border-radius: 4px;
   font-size: 16px;
+  font-family: "Silkscreen", sans-serif;
   background-color: white;
   background-position: 10px 10px;
   background-image: url('/static/images/icons/searchicon.png');
@@ -18,15 +19,14 @@ const StyledSearch = styled.input`
   ::placeholder {
     color: #3CF;
   }
-  :focus {
-    border: 2px solid #3CF;
-    outline: none;
+  :focus, :hover {
     width: 100%;
+  }
 `
 
-const Search = () => {
+const Search = props => {
   return (
-    <StyledSearch type="text" name="Search" placeholder="Search Pokédex" />
+    <StyledSearch type="text" name="Search" placeholder="Search Pokedex" onChange={props.searchFilter} />
   )
 }
 

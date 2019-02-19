@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -408,7 +408,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  margin: 0 auto;\n  max-width: 1200px;\n  width: 100%;\n  padding: 0 10px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  margin: 0 auto;\n  max-width: 1200px;\n  width: 100%;\n  padding: 0 10px;\n  text-align: center;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -428,7 +428,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  html {\n    box-sizing: border-box;\n    font-size: 10px;\n  }\n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  body, h1, h2 {\n    font-size: 1.6rem;\n    padding: 0;\n    margin: 0;\n  }\n  body {\n    background-image: url('/static/images/icons/dot-small.png');\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  @font-face {\n    font-family: \"Silkscreen\";\n    src: url(\"/static/fonts/slkscr.ttf\");\n  }\n  html {\n    box-sizing: border-box;\n    font-size: 10px;\n  }\n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n  body, h1, h2 {\n    font-size: 1.6rem;\n    padding: 0;\n    margin: 0;\n  }\n  body {\n    background-image: url(\"/static/images/icons/dot-small.png\");\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -468,43 +468,43 @@ function (_React$Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(GlobalStyle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 52
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 53
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 54
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledInner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 55
         },
         __self: this
       }, this.props.children), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 58
         },
         __self: this
       })));
@@ -536,8 +536,18 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/sheridan/Desktop/Pokedex/components/PokedexDisplay.js";
 
 
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  display: inline-block;\n  position: relative;\n  text-align: center;\n  font-family: \"Silkscreen\", sans-serif;\n  width: 70px;\n  height: 70px;\n  border: 2px solid grey;\n  background-color: white;\n  div {\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n    outline-style: hidden;\n  }\n  .focus:focus div, .focus:hover div {\n    animation: ", " .3s steps(2) infinite;\n  }\n  .focus:focus, .focus:hover {\n    outline: 5px solid #5E9ED6;\n  }\n  img {\n    width: 100%;\n  }\n  span img {\n    width: 15%;\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  position: relative;\n  width: 70px;\n  height: 70px;\n  display: inline-block;\n  margin: 2px;\n  border: 2px solid grey;\n  background-color: white;\n  &:hover {\n    border: 2px solid #3CF;\n  }\n  img {\n    width: 100%;\n    margin: 0;\n    position: absolute;\n    bottom: 50%;\n    transform: translateY(50%);\n  }\n  div {\n    display: inline-block;\n    width: 100%;\n    height: 100%;\n  }\n  div:hover {\n    animation: ", " .3s steps(2) infinite;\n  }\n}\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: grid;\n  justify-content: center;\n  grid-template-columns: repeat(auto-fit, 70px);\n  grid-gap: 2px;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -547,7 +557,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  0% {\n    transform: translateY(0);\n  }\n\n  100% {\n    transform: translateY(-20%);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  100% {\n    transform: translateY(10%);\n  }\n\n  0% {\n    transform: translateY(-10%);\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -561,42 +571,128 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var bounce = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["keyframes"])(_templateObject());
-var StyledPokedex = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div(_templateObject2(), bounce);
+var StyledPokedexContainer = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div(_templateObject2());
+var StyledPokedexEntry = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div(_templateObject3(), bounce);
 
 var PokedexDisplay = function PokedexDisplay(props) {
-  var pokemon = props.pokemon.results.map(function (pokemon, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPokedex, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/pokemon?name=".concat(pokemon.name),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      src: "/static/images/sprites/".concat(index + 1, ".png"),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }))));
-  });
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  var pokemon = [];
+
+  if (props.searchCriteria == "") {
+    pokemon = props.pokemon.map(function (pokemon, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPokedexEntry, {
+        key: index,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "focus",
+        tabIndex: "0",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "../static/images/icons/pokeball.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }), pokemon.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        href: "/pokemon?name=".concat(pokemon.name),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/static/images/sprites/".concat(pokemon.id, ".png"),
+        alt: pokemon.name,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        },
+        __self: this
+      })))));
+    });
+  } else {
+    pokemon = props.pokemon.filter(function (pokemon) {
+      return pokemon.name.includes(props.searchCriteria);
+    });
+    pokemon = pokemon.map(function (pokemon, index) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPokedexEntry, {
+        key: index,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "focus",
+        tabIndex: "0",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "../static/images/icons/pokeball.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }), pokemon.id), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        href: "/pokemon?name=".concat(pokemon.name),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/static/images/sprites/".concat(pokemon.id, ".png"),
+        alt: pokemon.name,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      })))));
+    });
+  }
+
+  ;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledPokedexContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 85
     },
     __self: this
   }, pokemon);
@@ -623,7 +719,7 @@ var _jsxFileName = "/Users/sheridan/Desktop/Pokedex/components/Search.js";
 
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: block;\n  color: #3CF;\n  width: 200px;\n  box-sizing: border-box;\n  margin: 20px auto;\n  border: 2px solid #3CF;\n  border-radius: 4px;\n  font-size: 16px;\n  background-color: white;\n  background-position: 10px 10px;\n  background-image: url('/static/images/icons/searchicon.png');\n  background-repeat: no-repeat;\n  padding: 12px 20px 12px 40px;\n  transition: width 0.4s ease-in-out;\n  ::placeholder {\n    color: #3CF;\n  }\n  :focus {\n    border: 2px solid #3CF;\n    outline: none;\n    width: 100%;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: block;\n  color: #3CF;\n  width: 220px;\n  box-sizing: border-box;\n  margin: 20px auto;\n  border: 2px solid #3CF;\n  border-radius: 4px;\n  font-size: 16px;\n  font-family: \"Silkscreen\", sans-serif;\n  background-color: white;\n  background-position: 10px 10px;\n  background-image: url('/static/images/icons/searchicon.png');\n  background-repeat: no-repeat;\n  padding: 12px 20px 12px 40px;\n  transition: width 0.4s ease-in-out;\n  ::placeholder {\n    color: #3CF;\n  }\n  :focus, :hover {\n    width: 100%;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -637,11 +733,12 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var StyledSearch = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.input(_templateObject());
 
-var Search = function Search() {
+var Search = function Search(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSearch, {
     type: "text",
     name: "Search",
-    placeholder: "Search Pok\xE9dex",
+    placeholder: "Search Pokedex",
+    onChange: props.searchFilter,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -691,13 +788,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -709,16 +808,31 @@ var _default =
 function (_React$Component) {
   _inherits(_default, _React$Component);
 
-  function _default() {
+  function _default(props) {
+    var _this;
+
     _classCallCheck(this, _default);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(_default).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(_default).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "searchFilter", function (e) {
+      var searchCriteria = e.target.value.toLowerCase();
+
+      _this.setState({
+        searchCriteria: searchCriteria
+      });
+    });
+
+    _this.state = {
+      searchCriteria: ""
+    };
+    return _this;
   }
 
   _createClass(_default, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      localStorage.setItem('data', JSON.stringify(this.props.pokemon));
+      sessionStorage.setItem('data', JSON.stringify(this.props.pokemon));
     }
   }, {
     key: "render",
@@ -726,20 +840,22 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 54
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        searchFilter: this.searchFilter,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 55
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_PokedexDisplay__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        pokemon: this.props.pokemon,
+        pokemon: this.props.pokemon.results,
+        searchCriteria: this.state.searchCriteria,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 56
         },
         __self: this
       }));
@@ -750,7 +866,7 @@ function (_React$Component) {
       var _getInitialProps = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var pokemon, lsTest, response, _response;
+        var pokemon, ssTest, response, _response;
 
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
@@ -758,29 +874,30 @@ function (_React$Component) {
               case 0:
                 pokemon = {};
 
-                lsTest = function lsTest() {
+                ssTest = function ssTest() {
                   var test = 'test';
 
                   try {
-                    localStorage.setItem(test, test);
-                    localStorage.removeItem(test);
+                    sessionStorage.setItem(test, test);
+                    sessionStorage.removeItem(test);
                     return true;
                   } catch (e) {
                     return false;
                   }
-                };
+                }; // check if session storage is set
 
-                if (!(lsTest() === true)) {
+
+                if (!(ssTest() === true)) {
                   _context.next = 15;
                   break;
                 }
 
-                if (!localStorage.getItem('data')) {
+                if (!sessionStorage.getItem('data')) {
                   _context.next = 7;
                   break;
                 }
 
-                pokemon = JSON.parse(localStorage.getItem('data'));
+                pokemon = JSON.parse(sessionStorage.getItem('data'));
                 _context.next = 13;
                 break;
 
@@ -813,11 +930,15 @@ function (_React$Component) {
                 pokemon = _context.sent;
 
               case 21:
+                pokemon.results.forEach(function (pokemon, index) {
+                  return pokemon.id = index + 1;
+                });
+                console.log(pokemon);
                 return _context.abrupt("return", {
                   pokemon: pokemon
                 });
 
-              case 22:
+              case 24:
               case "end":
                 return _context.stop();
             }
@@ -840,7 +961,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

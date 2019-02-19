@@ -4,22 +4,29 @@ import Search from '../components/Search';
 import PokedexDisplay from '../components/PokedexDisplay';
 
 export default class extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchCriteria: ""
+    }
+  }
 
   static async getInitialProps() {
-    let pokemon = {}
-    const lsTest = () => {
+    let pokemon = {};
+    const ssTest = () => {
       var test = 'test';
       try {
-        localStorage.setItem(test, test);
-        localStorage.removeItem(test);
+        sessionStorage.setItem(test, test);
+        sessionStorage.removeItem(test);
         return true;
       } catch(e) {
       return false;
       }
     }
-    if(lsTest() === true){
-      if(localStorage.getItem('data')){
-        pokemon = JSON.parse(localStorage.getItem('data'));
+    // check if session storage is set
+    if(ssTest() === true){
+      if(sessionStorage.getItem('data')){
+        pokemon = JSON.parse(sessionStorage.getItem('data'));
       } else {
         const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=718");
         pokemon = await response.json();
@@ -28,18 +35,25 @@ export default class extends React.Component {
       const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=718");
       pokemon = await response.json();
     }
+    pokemon.results.forEach((pokemon, index) => pokemon.id = index+1);
+    console.log(pokemon);
     return {pokemon};
   }
 
   componentDidMount() {
-    localStorage.setItem('data', JSON.stringify(this.props.pokemon));
+    sessionStorage.setItem('data', JSON.stringify(this.props.pokemon));
+  }
+
+  searchFilter = e => {
+    let searchCriteria = e.target.value.toLowerCase();
+    this.setState({searchCriteria: searchCriteria});
   }
 
   render() {
     return (
       <Layout>
-        <Search />
-        <PokedexDisplay pokemon={this.props.pokemon} />
+        <Search searchFilter={this.searchFilter} />
+        <PokedexDisplay pokemon={this.props.pokemon.results} searchCriteria={this.state.searchCriteria} />
       </Layout>
     )
   }

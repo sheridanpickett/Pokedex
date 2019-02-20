@@ -51,11 +51,21 @@
   },
   "chunks": {
     "byName": {
-      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/_document.js": 0,
-      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/index.js": 1,
-      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/pokemon.js": 2,
-      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/_app.js": 3,
-      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/_error.js": 4
+      "static/hFke4Ubj2u31N8HN7sgyL/pages/_document.js": 0,
+      "static/hFke4Ubj2u31N8HN7sgyL/pages/index.js": 1,
+      "static/hFke4Ubj2u31N8HN7sgyL/pages/pokemon.js": 2,
+      "static/hFke4Ubj2u31N8HN7sgyL/pages/_app.js": 3,
+      "static/hFke4Ubj2u31N8HN7sgyL/pages/_error.js": 4,
+      "static/HMATy4~BYTxWX996lRvf3/pages/_document.js": 5,
+      "static/HMATy4~BYTxWX996lRvf3/pages/index.js": 6,
+      "static/HMATy4~BYTxWX996lRvf3/pages/pokemon.js": 7,
+      "static/HMATy4~BYTxWX996lRvf3/pages/_app.js": 8,
+      "static/HMATy4~BYTxWX996lRvf3/pages/_error.js": 9,
+      "static/9Pgh_iPbb8SR~km1laRH~/pages/_document.js": 0,
+      "static/9Pgh_iPbb8SR~km1laRH~/pages/index.js": 1,
+      "static/9Pgh_iPbb8SR~km1laRH~/pages/pokemon.js": 2,
+      "static/9Pgh_iPbb8SR~km1laRH~/pages/_app.js": 3,
+      "static/9Pgh_iPbb8SR~km1laRH~/pages/_error.js": 4
     },
     "bySource": {},
     "usedIds": [

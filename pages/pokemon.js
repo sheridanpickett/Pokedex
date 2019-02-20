@@ -113,7 +113,7 @@ render() {
         <StyledContent>
           <nav>
             {species.id>1 ? <Link prefetch href={`/pokemon?id=${pokemon.id-1}`}><a>Prev</a></Link> : null}
-            <Link href="/"><a>Home</a></Link>
+            <Link prefetch href="/"><a>Home</a></Link>
             {species.id<718 ? <Link prefetch href={`/pokemon?id=${pokemon.id+1}`}><a>Next</a></Link> : null}
           </nav>
           <h1>{species.name} - {species.names[1].name}</h1>

@@ -36,12 +36,20 @@ export default class extends React.Component {
       pokemon = await response.json();
     }
     pokemon.results.forEach((pokemon, index) => pokemon.id = index+1);
-    console.log(pokemon);
     return {pokemon};
   }
 
   componentDidMount() {
     sessionStorage.setItem('data', JSON.stringify(this.props.pokemon));
+  }
+
+  configGenerator = () => {
+    let pokemon = this.props.pokemon.results;
+    let config = pokemon.map(pokemon => {
+      let element = <div>{`'/pokemon/${pokemon.name}': { page: '/pokemon', query: { id: ${pokemon.id} }}`}</div>;
+      return element;
+    })
+    return config;
   }
 
   searchFilter = e => {
@@ -54,6 +62,8 @@ export default class extends React.Component {
       <Layout>
         <Search searchFilter={this.searchFilter} />
         <PokedexDisplay pokemon={this.props.pokemon.results} searchCriteria={this.state.searchCriteria} />
+        <br />
+        <div>{this.configGenerator()}</div>
       </Layout>
     )
   }

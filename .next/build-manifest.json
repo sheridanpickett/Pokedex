@@ -3,27 +3,27 @@
   "pages": {
     "/index": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.5c6178694d8b5539aef4.js",
+      "static/chunks/commons.bafd883ef0ad94871fc5.js",
       "static/runtime/main-2f02bd9269812ac15546.js"
     ],
     "/pokemon": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.5c6178694d8b5539aef4.js",
+      "static/chunks/commons.bafd883ef0ad94871fc5.js",
       "static/runtime/main-2f02bd9269812ac15546.js"
     ],
     "/_app": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.5c6178694d8b5539aef4.js",
+      "static/chunks/commons.bafd883ef0ad94871fc5.js",
       "static/runtime/main-2f02bd9269812ac15546.js"
     ],
     "/_error": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.5c6178694d8b5539aef4.js",
+      "static/chunks/commons.bafd883ef0ad94871fc5.js",
       "static/runtime/main-2f02bd9269812ac15546.js"
     ],
     "/": [
       "static/runtime/webpack-42652fa8b82c329c0559.js",
-      "static/chunks/commons.5c6178694d8b5539aef4.js",
+      "static/chunks/commons.bafd883ef0ad94871fc5.js",
       "static/runtime/main-2f02bd9269812ac15546.js"
     ]
   }

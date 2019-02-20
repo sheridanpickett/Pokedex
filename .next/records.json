@@ -510,10 +510,18 @@
       "commons": 0,
       "static/runtime/webpack.js": 1,
       "static/runtime/main.js": 2,
-      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/index.js": 3,
-      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/pokemon.js": 4,
-      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/_app.js": 5,
-      "static/aMfS2_4nzRZ_NdKel_1Qd/pages/_error.js": 6
+      "static/hFke4Ubj2u31N8HN7sgyL/pages/index.js": 3,
+      "static/hFke4Ubj2u31N8HN7sgyL/pages/pokemon.js": 4,
+      "static/hFke4Ubj2u31N8HN7sgyL/pages/_app.js": 5,
+      "static/hFke4Ubj2u31N8HN7sgyL/pages/_error.js": 6,
+      "static/HMATy4~BYTxWX996lRvf3/pages/index.js": 7,
+      "static/HMATy4~BYTxWX996lRvf3/pages/pokemon.js": 8,
+      "static/HMATy4~BYTxWX996lRvf3/pages/_app.js": 9,
+      "static/HMATy4~BYTxWX996lRvf3/pages/_error.js": 10,
+      "static/9Pgh_iPbb8SR~km1laRH~/pages/index.js": 3,
+      "static/9Pgh_iPbb8SR~km1laRH~/pages/pokemon.js": 4,
+      "static/9Pgh_iPbb8SR~km1laRH~/pages/_app.js": 5,
+      "static/9Pgh_iPbb8SR~km1laRH~/pages/_error.js": 6
     },
     "bySource": {},
     "usedIds": [

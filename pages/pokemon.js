@@ -74,8 +74,10 @@ class PokedexEntry extends React.Component {
       data.pokemon = await(await fetch(`https://pokeapi.co/api/v2/pokemon/${query.id}`)).json();
       data.species = await(await fetch(`https://pokeapi.co/api/v2/pokemon-species/${query.id}`)).json();
     } catch(err) {
-
+      console.log(err);
     }
+    console.log(data.species)
+    console.log(data.pokemon)
     return data;
   }
 
@@ -112,9 +114,9 @@ render() {
       <Layout>
         <StyledContent>
           <nav>
-            {species.id>1 ? <Link prefetch href={`/pokemon?id=${pokemon.id-1}`}><a>Prev</a></Link> : null}
-            <Link prefetch href="/"><a>Home</a></Link>
-            {species.id<718 ? <Link prefetch href={`/pokemon?id=${pokemon.id+1}`}><a>Next</a></Link> : null}
+            {species.id>1 ? <Link  href={`/pokemon?id=${pokemon.id-1}`}><a>Prev</a></Link> : null}
+            <Link href="/"><a>Home</a></Link>
+            {species.id<718 ? <Link  href={`/pokemon?id=${pokemon.id+1}`}><a>Next</a></Link> : null}
           </nav>
           <h1>{species.name} - {species.names[1].name}</h1>
           <img src={pokemon.sprites.front_default} />

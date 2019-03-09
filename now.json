@@ -1,6 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "package.json", "use": "@now/next" }
-  ]
+  "name": "pokedex",
+  "routes": [
+    { "src": "/pokemon/(.*)", "dest": "/pokemon?id=$1" }
+  ],
+  "builds": [{ "src": "next.config.js", "use": "@now/next", "config": { "maxLambdaSize": "50mb" } }]
 }

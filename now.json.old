@@ -1,9 +1,8 @@
 {
   "version": 2,
   "name": "pokedex",
-  "regions": ["gru"],
   "routes": [
     { "src": "/pokemon/(?<id>[^/]+)$", "dest": "/pokemon?id=$id" }
   ],
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }]
+  "builds": [{ "src": "next.config.js", "use": "@now/next", "config": { "maxLambdaSize": "50mb" } }]
 }

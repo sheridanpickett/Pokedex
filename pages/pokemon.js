@@ -1,3 +1,4 @@
+import fetch from 'isomorphic-unfetch';
 import {withRouter} from 'next/router'
 import styled from 'styled-components';
 import Link from 'next/link';
@@ -76,8 +77,6 @@ class PokedexEntry extends React.Component {
     } catch(err) {
       console.log(err);
     }
-    console.log(data.species)
-    console.log(data.pokemon)
     return data;
   }
 
@@ -99,11 +98,10 @@ class PokedexEntry extends React.Component {
       })
       return moves;
     } else {
-      let moves = this.props.pokemon.moves.map(move => {
-        if(move.version_group_details[0].move_learn_method.name==method) {
-          return <tr><td>{move.move.name}</td></tr>
-        }
+      let moves = this.props.pokemon.moves.filter(move => {
+        return move.version_group_details[0].move_learn_method.name==method;
       })
+      moves = moves.map(move => <tr><td>{move.move.name}</td></tr>);
       return moves;
     }
   }
@@ -114,9 +112,9 @@ render() {
       <Layout>
         <StyledContent>
           <nav>
-            {species.id>1 ? <Link  href={`/pokemon?id=${pokemon.id-1}`}><a>Prev</a></Link> : null}
+            {species.id>1 ? <Link rel="prefetch" href={`/pokemon?id=${pokemon.id-1}`}><a>Prev</a></Link> : null}
             <Link href="/"><a>Home</a></Link>
-            {species.id<718 ? <Link  href={`/pokemon?id=${pokemon.id+1}`}><a>Next</a></Link> : null}
+            {species.id<718 ? <Link rel="prefetch" href={`/pokemon?id=${pokemon.id+1}`}><a>Next</a></Link> : null}
           </nav>
           <h1>{species.name} - {species.names[1].name}</h1>
           <img src={pokemon.sprites.front_default} />
@@ -195,10 +193,19 @@ render() {
             </table>
             <table>
               <tbody>
-                <tr><th>Egg Moves</th></tr>
-                {this.moveDisplay("egg")}
+                <tr><th colSpan="2">TM Moves</th></tr>
+                {this.moveDisplay("machine")}
               </tbody>
             </table>
+            {this.moveDisplay("egg").length > 0 ?
+              <table>
+                <tbody>
+                  <tr><th>Egg Moves</th></tr>
+                  {this.moveDisplay("egg")}
+                </tbody>
+              </table>
+              :null
+            }
           </div>
         </StyledContent>
       </Layout>

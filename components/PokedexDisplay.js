@@ -55,7 +55,7 @@ const PokedexDisplay = props => {
         <StyledPokedexEntry key={index}>
           <div className="focus" tabIndex="0">
           <span><img src="../static/images/icons/pokeball.png" />{pokemon.id}</span>
-            <Link rel="prefetch" href={`/pokemon?id=${pokemon.id}`}>
+            <Link as={`/pokemon/${pokemon.id}`} rel="prefetch" href={`/pokemon?id=${pokemon.id}`}>
               <div>
                 <img src={`https://img.pokemondb.net/sprites/sun-moon/icon/${pokemon.name}.png`} alt={pokemon.name} />
               </div>
@@ -71,7 +71,7 @@ const PokedexDisplay = props => {
         <StyledPokedexEntry key={index}>
           <div className="focus" tabIndex="0">
           <span><img src="../static/images/icons/pokeball.png" />{pokemon.id}</span>
-            <Link rel="prefetch"  href={`/pokemon?id=${pokemon.id}`}>
+            <Link as={`/pokemon/${pokemon.id}`} rel="prefetch" href={`/pokemon?id=${pokemon.id}`}>
               <a>
                 <div>
                   <img src={`https://img.pokemondb.net/sprites/sun-moon/icon/${pokemon.name}.png`} alt={pokemon.name} />

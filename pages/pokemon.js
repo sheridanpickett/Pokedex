@@ -112,9 +112,9 @@ render() {
       <Layout>
         <StyledContent>
           <nav>
-            {species.id>1 ? <Link rel="prefetch" href={`/pokemon?id=${pokemon.id-1}`}><a>Prev</a></Link> : null}
+            {species.id>1 ? <Link as={`/pokemon/${pokemon.id-1}`} rel="prefetch" href={`/pokemon?id=${pokemon.id-1}`}><a>Prev</a></Link> : null}
             <Link href="/"><a>Home</a></Link>
-            {species.id<718 ? <Link rel="prefetch" href={`/pokemon?id=${pokemon.id+1}`}><a>Next</a></Link> : null}
+            {species.id<718 ? <Link as={`/pokemon/${pokemon.id+1}`} rel="prefetch" href={`/pokemon?id=${pokemon.id+1}`}><a>Next</a></Link> : null}
           </nav>
           <h1>{species.name} - {species.names[1].name}</h1>
           <img src={pokemon.sprites.front_default} />
